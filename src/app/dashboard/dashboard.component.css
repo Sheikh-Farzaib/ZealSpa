@@ -3,7 +3,25 @@
   background-color: var(--hover-color)!important;
   
 }
-
+/* #mainNavHidden{
+  display: flex;
+} */
+.dNone{
+  display: none;
+}
+@media (max-width: 994px) {
+  .offcanvas{
+    position: absolute;
+    max-width: 290px;
+  }
+  #mainControlCol{
+    width: 100%;
+  }
+  /* #mainNavHidden{
+    width: 0px;
+   
+  } */
+}
 /* @media (max-width: 998px) {
   #mainNavHidden{
     width: 0px;
@@ -93,7 +111,7 @@
     
   }
   .featherIcon{
-    margin-left: 3px;
+    /* margin-left: 3px; */
     transition: .3s ease-in-out;
 
   }
@@ -147,19 +165,18 @@
 .offcanvas{
   border-radius: 30px;
   background-color: var(--dash-bg);
-  max-width: 290px;
+  /* max-width: 290px; */
   /* max-height: 96vh!important; */
-  margin-bottom: 50px;
   margin-top: 16px;
   left: 1%;
   bottom: 100vh;
-  position: absolute;
+  position: relative;
   transition: none;
   
 }
 #offCanvasNav{
   background-color: var(--dash-bg);
-  margin: 15px 15px 15px 15px!important;
+  /* margin: 15px 15px 15px 15px!important; */
   border-radius: 30px;
   /* height: 100vh!important; */
   
