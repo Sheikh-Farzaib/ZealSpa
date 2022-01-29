@@ -3,20 +3,24 @@
   background-color: var(--hover-color)!important;
   
 }
-/* #mainNavHidden{
-  display: flex;
-} */
-.dNone{
-  display: none;
-}
-@media (max-width: 994px) {
-  .offcanvas{
+
+@media (max-width: 1324px) {
+  /* .offcanvas{
     position: absolute;
-    max-width: 290px;
+    max-width: 350px;
+  } */
+  #mainNavHidden{
+      position: absolute;
+      max-width: 500px;
+      top: 10px  ;
+      left: 10px; 
   }
-  #mainControlCol{
-    width: 100%;
-  }
+
+  
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,0)!important;
   /* #mainNavHidden{
     width: 0px;
    
@@ -27,12 +31,8 @@
     width: 0px;
    
   }
-  #navggleToButton{
-    display: block;
-  }
-  #hiddenNavBar{
-    display: block;
-  }
+
+
   #mainNavWrapper{
     display: none;
   }
@@ -40,9 +40,7 @@
     width: 100%;
   }
  } */
- /* #mainContentCol{
-   transition: 1s ease-in-out;
- } */
+ 
  /* #mainNavHidden{
   transition: .30s ease-in-out;
  } */
@@ -126,31 +124,31 @@
   font-size: 5px!important;
 }
 .mainNav{
-  padding: 0 0 0 0;
+  padding: 0;
 }
 #mainContent{
   margin-left: 15px!important;
   border-radius: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
-  
   height: 92vh;
+  background-color: var(--card-color);
 }
 
 .container-xxl {
   max-width: 4000px!important;
   
 }
-#mainNavUl{
+/* #mainNavUl{
   margin-top: 8rem ;
-}
+} */
 .img{
   height: 100px;
   width: 100px;
   border: 5px solid white;
   border-radius: 30px;
   overflow: hidden;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   /* margin-left: 20px; */
   
 }
@@ -164,20 +162,24 @@
 }
 .offcanvas{
   border-radius: 30px;
-  background-color: var(--dash-bg);
-  /* max-width: 290px; */
+  background-color: transparent;
+  max-width: 350px;
+  max-height: 100%;
   /* max-height: 96vh!important; */
-  margin-top: 16px;
-  left: 1%;
-  bottom: 100vh;
-  position: relative;
+  margin-top: 15px;
+  top: 3%;
+  left: 3%;
+  bottom: 100%;
+  position: absolute;
   transition: none;
   
 }
 #offCanvasNav{
   background-color: var(--dash-bg);
+  align-self: flex-start;
   /* margin: 15px 15px 15px 15px!important; */
   border-radius: 30px;
+  max-width: 350px;
   /* height: 100vh!important; */
   
 }

@@ -26,25 +26,27 @@ export class DashboardComponent implements OnInit {
         }
       });
     });
+  
     $('#navToggleButton, #closeButton').on('click', function(){
-      
      
-      if($('#offcanvasNavbar').attr('aria-modal') === 'true'){
-        $('#mainNavHidden').toggleClass('dNone');
-        $('#mainContentCol').addClass('col-lg-12');
-        $('#mainContentCol').removeClass('col-lg-10');
-        
-        
+      if($('#offcanvasNavbar').hasClass('show')){
+        $('#mainNavHidden').css('display','flex');
+        $('#mainContentCol').removeClass('col-xxl-12');
+        $('#mainContentCol').addClass('col-xxl-10');
+        alert('first');
       }
-      if($('#offcanvasNavbar').attr('aria-hidden') === "hidden"){
-          $('#mainContentCol').addClass('col-lg-10');
-          $('#mainContentCol').removeClass('col-lg-12');
-          alert('working');
-          
-        };
-      
-     
+      else{
+        $('#mainNavHidden').css('display','none');
+        $('#mainContentCol').removeClass('col-xxl-10');
+        $('#mainContentCol').addClass('col-xxl-12');
+        alert('second');
+      }
     });
+    if($('#offcanvasNavbar').hasClass('show')){
+      $('#mainContentCol').addClass('col-xxl-12');
+    }
+    
+    
    
 
     
