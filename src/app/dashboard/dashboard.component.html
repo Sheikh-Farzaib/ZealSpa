@@ -1,0 +1,272 @@
+<!-- Dashboard Begin -->
+<div class="container-xxl mx-10 my-3">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card" id="dashMainBody">
+                <!-- SideBar Begin -->
+                <div class="row">
+                    <div class="col-sm-2" id="mainNavHidden">
+                        <div class="offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="card" id="offCanvasNav">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button id="closeButton" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="wrapper" id="mainNavWrapper">
+                                    <div class="row">
+                                        <div class="col-lg-12 d-flex flex-column justify-content-center">
+                                            
+                                            <div class="img align-self-center">
+                                                <img src="assets/Photos/Zayn-Malik.jpg" class="img-fluid profileImg" alt="...">
+                                            </div>
+                                            <div id="profileName" class="h6 px-2 align-self-center mt-3"> Shiekh Farzaib</div>
+                                            <div id="profileEmail" class="h7 email px-2 align-self-center">sfarzaib@gmail.com</div>
+                                                
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="navbar navbar-dark">
+                                                <ul class="navbar-nav" id="mainNavUl">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <li class="nav-item mainNav">
+                                                            <div class="accordion-item">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                                    aria-controls="flush-collapseOne">
+                                                                    <span data-feather="chevron-right"
+                                                                        class="h2 featherIcon"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                                        class="h4">Student</span>
+                                                                </button>
+        
+                                                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                                    aria-labelledby="flush-headingOne"
+                                                                    data-bs-parent="#accordionFlushExample">
+                                                                    <ul class="navbar-nav" id="insideNav">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" routerLink="Student-List"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Student
+                                                                                List</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Batches-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Batches
+                                                                                Enrolled</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Courses-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Courses
+                                                                                Enrolled</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+        
+                                                        </li>
+                                                        <li class="nav-item mainNav">
+        
+                                                            <div class="accordion-item">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                                    aria-controls="flush-collapseTwo">
+                                                                    <span data-feather="chevron-right"
+                                                                        class="h2 featherIcon"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                                        class="h4">Faculty</span>
+                                                                </button>
+        
+                                                                <div id="flush-collapseTwo" class="accordion-collapse  collapse"
+                                                                    aria-labelledby="flush-headingTwo"
+                                                                    data-bs-parent="#accordionFlushExample">
+                                                                    <ul class="navbar-nav" id="insideNav">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" routerLink="Student-List"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Faculty
+                                                                                List</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Batches-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Batches
+                                                                                Enrolled</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Courses-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Courses
+                                                                                Enrolled</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+        
+                                                        </li>
+                                                        <li class="nav-item mainNav">
+        
+                                                            <div class="accordion-item">
+                                                                <button class="accordion-button collapsed h1" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                                    aria-controls="flush-collapseThree">
+                                                                    <span data-feather="chevron-right"
+                                                                        class="h2 featherIcon"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                                        class="h4">Courses</span>
+                                                                </button>
+        
+                                                                <div id="flush-collapseThree"
+                                                                    class="accordion-collapse  collapse"
+                                                                    aria-labelledby="flush-headingThree"
+                                                                    data-bs-parent="#accordionFlushExample">
+                                                                    <ul class="navbar-nav" id="insideNav">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" routerLink="Student-List"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Add
+                                                                                Courses</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Batches-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Add
+                                                                                Course
+                                                                                Enrollments</a>
+                                                                        </li>
+        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+        
+                                                        </li>
+                                                        <li class="nav-item mainNav">
+        
+                                                            <div class="accordion-item">
+                                                                <button class="accordion-button collapsed h1" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                                                    aria-controls="flush-collapseFour">
+                                                                    <span data-feather="chevron-right"
+                                                                        class="h2 featherIcon"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                                        class="h4">Batches</span>
+                                                                </button>
+        
+                                                                <div id="flush-collapseFour"
+                                                                    class="accordion-collapse  collapse"
+                                                                    aria-labelledby="flush-headingFour"
+                                                                    data-bs-parent="#accordionFlushExample">
+                                                                    <ul class="navbar-nav" id="insideNav">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" routerLink="Student-List"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Add
+                                                                                Batches</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Batches-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>
+                                                                                Add
+                                                                                Batch
+                                                                                Enrollments</a>
+                                                                        </li>
+        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+        
+                                                        </li>
+                                                        <li class="nav-item mainNav">
+        
+                                                            <div class="accordion-item">
+                                                                <button class="accordion-button collapsed h1" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                                                    aria-controls="flush-collapseFive">
+                                                                    <span data-feather="chevron-right"
+                                                                        class="h2 featherIcon"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                                        class="h4">Exams</span>
+                                                                </button>
+        
+                                                                <div id="flush-collapseFive"
+                                                                    class="accordion-collapse  collapse"
+                                                                    aria-labelledby="flush-headingFive"
+                                                                    data-bs-parent="#accordionFlushExample">
+                                                                    <ul class="navbar-nav" id="insideNav">
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link" routerLink="Student-List"><span
+                                                                                    class="navChild" data-feather="star"></span>Exam List</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Batches-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>Result List</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link"
+                                                                                routerLink="Batches-Enrolled"><span
+                                                                                    class="navChild" data-feather="star"></span>Make Report</a>
+                                                                        </li>
+        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+        
+                                                        </li>
+                                                        <!-- SideNavBar end -->
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- SideBar End -->
+
+                    <div class="col col-sm-12" id="mainContentCol">
+                        <div class="card mx-3" id="mainContent">
+                            <nav class="navbar navbar-light bg-light" id="hiddenNavBar">
+                               
+                                <a  class="logout text-danger h4 ms-auto mx-3 my-2 float-right" data-feather="power">
+                                </a>
+                                
+                                <button id="navToggleButton" class="navbar-toggler float-left mx-3" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                    
+                                        
+                                    
+                                    
+              
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hidden NavBar Begin -->
+                
+                <!-- Hidden NavBar End -->
+
+
+            </div>
+        </div>
+    </div>
+</div>

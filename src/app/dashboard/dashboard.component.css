@@ -1,0 +1,166 @@
+#hiddenNavBar{
+  border-radius: 30px 30px 0 0;
+  background-color: var(--hover-color)!important;
+  
+}
+
+/* @media (max-width: 998px) {
+  #mainNavHidden{
+    width: 0px;
+   
+  }
+  #navggleToButton{
+    display: block;
+  }
+  #hiddenNavBar{
+    display: block;
+  }
+  #mainNavWrapper{
+    display: none;
+  }
+  #mainContentCol{
+    width: 100%;
+  }
+ } */
+ /* #mainContentCol{
+   transition: 1s ease-in-out;
+ } */
+ /* #mainNavHidden{
+  transition: .30s ease-in-out;
+ } */
+ .email{
+   font-size: .8rem;
+ }
+
+#dashMainBody{
+  border-radius: 30px;
+  background-color: var(--dash-bg);
+  /* height: 96vh; */
+}
+.accordion-button{
+  color: var(--nav-color);
+  padding: 0 0 0 0;
+  margin: 0;
+  
+}
+.accordion-button.collapsed{
+  color: var(--nav-color);
+  transition: .3s ease-in-out!important;
+}
+.accordion-button::after {
+  background-image: none;
+ 
+}
+.accordion-button:not(.collapsed){
+  color: var(--hover-color);
+}
+  .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    color: var(--hover-color);
+    transform: rotate(360deg);
+    
+  }
+  .accordion-button,.accordion-item{
+    background-color: transparent!important;
+  }
+  .accordion-button:hover{
+    color: var(--hover-color);
+
+    box-shadow: none;
+  }
+  .accordion-button:focus{
+    box-shadow: none;
+  }
+  .accordion-collapse {
+    margin: 5px 0;
+    
+    
+  }
+  #insideNav{
+    padding-left: 21px;
+   
+  }
+  #profileName, #profileEmail{
+    color: var(--hover-color);
+
+  }
+  .nav-link{
+    padding: 0 0 5px 0!important;
+    letter-spacing: 1px;
+  }
+  .h4{
+    letter-spacing: 1px;
+    
+  }
+  .featherIcon{
+    margin-left: 3px;
+    transition: .3s ease-in-out;
+
+  }
+ .active{
+  margin-top: 4px;
+  transform: rotate(-267deg);
+   /* transition: .3s ease-in-out; */
+ }
+.navChild{
+  width: 15px;
+  height: 15px;
+  font-size: 5px!important;
+}
+.mainNav{
+  padding: 0 0 0 0;
+}
+#mainContent{
+  margin-left: 15px!important;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  height: 92vh;
+}
+
+.container-xxl {
+  max-width: 4000px!important;
+  
+}
+#mainNavUl{
+  margin-top: 8rem ;
+}
+.img{
+  height: 100px;
+  width: 100px;
+  border: 5px solid white;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 3rem;
+  /* margin-left: 20px; */
+  
+}
+.profileImg{
+  height: 100%;
+  width: 100%;
+  
+}
+.logout{
+  cursor: pointer;
+}
+.offcanvas{
+  border-radius: 30px;
+  background-color: var(--dash-bg);
+  max-width: 290px;
+  /* max-height: 96vh!important; */
+  margin-bottom: 50px;
+  margin-top: 16px;
+  left: 1%;
+  bottom: 100vh;
+  position: absolute;
+  transition: none;
+  
+}
+#offCanvasNav{
+  background-color: var(--dash-bg);
+  margin: 15px 15px 15px 15px!important;
+  border-radius: 30px;
+  /* height: 100vh!important; */
+  
+}
