@@ -19,7 +19,8 @@ export class AppComponent{
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl, {
             container: 'body',
-            trigger : 'hover'
+            trigger : 'hover',
+            delay: {show: 100, hide: 1}
         });
     });
    

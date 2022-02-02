@@ -4,14 +4,17 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-    --nav-color: #6f6f70fb;
+    --nav-color:  white;
     --dash-bg: chocolate;
     --card-bg: snow;
     --text-color: black;
-    --hover-color: white;
+    --hover-color: #6f6f70fb;
     --card-color: #ffffff;
     --no-color: transparent;
     --bg-choc: chocolate;
+    --text-white: white;
+    --text-black: black;
+    --text-gray: #6f6f70fb;
     
 }
 body{

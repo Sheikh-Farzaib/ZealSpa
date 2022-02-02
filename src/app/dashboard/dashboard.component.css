@@ -1,17 +1,15 @@
 #hiddenNavBar{
   border-radius: 30px 30px 0 0;
   background-color: transparent!important;
-  /* background-color: var(--hover-color)!important; */
+
   
 }
+
 .nav-link{
-  color: var(--nav-color);
+  color: var(--text-white);
 }
 .nav-link:hover{
-  color: var(--hover-color);
-}
-.grid-container{
-  max-width: 400px;
+  color: var(--text-gray);
 }
 @media screen and (max-height: 800px){
 .resHeight{
@@ -19,16 +17,7 @@
 }
 }
 
-@media screen and (max-width: 1400px) {
-
-  /* #mainNavHidden{
-    position: absolute;
-      max-width: 500px!important;
-      top: 10px  ;
-      left: 25px; 
-  } */
-  
-  
+@media screen and (max-width: 1401px) {
 
   #offCanvasNav{
     width: 100%!important;
@@ -37,9 +26,6 @@
   }
   .offcanvas{
     left: 5%;
-    
-    
-    
   }
   #closeButton{
     visibility: visible!important;
@@ -49,35 +35,29 @@
 #mainNavUl{
   width: 100%;
 }
-.navbar-light .navbar-toggler {
-  color: rgba(0,0,0,.55);
-  border-color: rgba(0,0,0,0)!important;
-  cursor: pointer;
-}
-.navbar-light .navbar-toggler:focus {
-  color: rgba(0,0,0,.55);
-  border-color: none!important;
-  outline: none!important;
-  cursor: pointer;
-}
 
  .email{
    font-size: .8rem;
  }
 
 #dashMainBody{
-
+  height: 100%;
   border-radius: 35px;
   background-color: var(--dash-bg);
 }
+/* -------accordian button start */
 .accordion-button{
-  color: var(--nav-color);
+  color: var(--text-white)!important;
   padding: 0 0 0 0;
   margin: 0;
   
 }
+.accordion-button.collapsed::after{
+  margin: 0!important;
+  display: none;
+}
 .accordion-button.collapsed{
-  color: var(--nav-color);
+  color: var(--text-white)!important;
   transition: .3s ease-in-out!important;
 }
 .accordion-button::after {
@@ -85,11 +65,11 @@
  
 }
 .accordion-button:not(.collapsed){
-  color: var(--hover-color);
+  color: var(--text-gray)!important;
 }
   .accordion-button:not(.collapsed)::after {
     background-image: none;
-    color: var(--hover-color);
+    color: var(--text-gray)!important;
     transform: rotate(360deg);
     
   }
@@ -97,24 +77,23 @@
     background-color: transparent!important;
   }
   .accordion-button:hover{
-    color: var(--hover-color);
-
+    color: var(--text-gray)!important;
     box-shadow: none;
   }
   .accordion-button:focus{
-    box-shadow: none;
+    box-shadow: none!important;
   }
   .accordion-collapse {
     margin: 5px 0;
     
-    
   }
+  /* ------accordian button end */
   #insideNav{
     padding-left: 21px;
    
   }
   #profileName, #profileEmail{
-    color: var(--hover-color);
+    color: var(--text-white);
 
   }
   .nav-link{
@@ -146,7 +125,7 @@
   border-radius: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
-  height: 91vh; 
+  height: 94vh; 
   overflow: hidden;
   background-color: var(--card-color);
 
@@ -157,23 +136,32 @@
 #mainContentInside{
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 87vh;
+  position: relative;
+  height: 89.5vh;
   border-radius: 0 0 30px 30px;
   padding: 10px;
   border: none;
-  background-color: yellow;
   padding-bottom: 10px;
-  /* background-color: var(--card-color); */
+  background-color: var(--card-color);
 }
-#navMenu{
-  transition: 1s ease-in-out;
-}
+
 
 
 .container-xxl {
   max-width: 4000px!important;
   
 }
+/* ------Custom Text colors */
+.textWhite{
+  color: var(--text-white)!important;
+}
+.textBlack{
+  color: var(--text-black)!important;
+}
+.textGray{
+  color: var(--text-gray)!important;
+}
+/* ------Custom Text colors End */
 
 .img{
   height: 100px;
