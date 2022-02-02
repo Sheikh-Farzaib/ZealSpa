@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import  'src/assets/CustomJS/customFunc.js';
+declare var feather: any
 
 
 @Component({
@@ -7,52 +9,54 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
- 
+
   constructor() { }
-  
+
   ngOnInit(): void {
-    
-    $('.accordion-button').on('click',function() {
-      $('.accordion-button').each(function() {
+    $('.accordion-button').on('click', function () {
+      $('.accordion-button').each(function () {
         if ($(this).attr('aria-expanded') === "true") {
-            $(this).find('.featherIcon').addClass('active');
+          $(this).find('.featherIcon').addClass('rotation');
         }
         else {
-          $('.accordion-button').each(function() {
+          $('.accordion-button').each(function () {
             if ($(this).attr('aria-expanded') === "false") {
-                $(this).find('.featherIcon').removeClass('active');
+              $(this).find('.featherIcon').removeClass('rotation');
             }
           });
         }
       });
     });
   
-    $('#navToggleButton, #closeButton').on('click', function(){
-     
-      if($('#offcanvasNavbar').hasClass('show')){
-        $('#mainNavHidden').css('display','flex');
+    $('#navToggleButton, #closeButton, .nav-link').on('click', function () {
+      $('#navMenu').toggleClass('active');
+      var title = "Menu";
+      if($('#navMenu').hasClass('active')){
+        title = "Close Menu";
+      };
+      $('#navMenu').attr('title',title);
+      $('#navMenu').attr('data-bs-original-title',title);
+      $('#navMenu').attr('aria-label',title);
+  
+      if ($('#offcanvasNavbar').hasClass('show')) {
+        $('#mainNavHidden').show();
         $('#mainContentCol').removeClass('col-xxl-12');
         $('#mainContentCol').addClass('col-xxl-10');
-        alert('first');
+        const connectId = $('#navMenu');
+        connectId.html(feather.icons['x'].toSvg() + 'Close');
+      
+      
       }
-      else{
-        $('#mainNavHidden').css('display','none');
+      else {
+        $('#mainNavHidden').hide();
         $('#mainContentCol').removeClass('col-xxl-10');
         $('#mainContentCol').addClass('col-xxl-12');
-        alert('second');
+        const connectId = $('#navMenu');
+        connectId.html(feather.icons['menu'].toSvg() + 'Menu');
       }
     });
-    if($('#offcanvasNavbar').hasClass('show')){
-      $('#mainContentCol').addClass('col-xxl-12');
-    }
-    
-    
-   
-
-    
-    
   }
-    
-    
-  
+
+
+
 }
