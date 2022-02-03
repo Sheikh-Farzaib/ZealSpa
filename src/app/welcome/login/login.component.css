@@ -1,0 +1,35 @@
+#mainCard{
+    background-color: var(--bg-choc);
+    border-radius: 30px;
+}
+.Text{
+    display: flex;
+    justify-content: center;
+    color: var(--text-white);
+}
+#loginFormCard{
+    box-shadow: none!important;
+    height: 93vh;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-outline .form-control:focus~.form-label {
+    color: var(--text-choc)!important;
+   
+}
+.form-outline{
+    width: 50%;
+    margin: auto;
+}
+.btn{
+    background-color: var(--bg-choc);
+    color: var(--text-white);
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 20%;
+    margin: auto;
+}

@@ -14,16 +14,13 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     $('.accordion-button').on('click', function () {
+      $('#accordionFlushExample1').toggleClass('fakeClass');
       $('.accordion-button').each(function () {
         if ($(this).attr('aria-expanded') === "true") {
-          $(this).find('.featherIcon').addClass('rotation');
+          $(this).find('.featherIcon').addClass('rotation');    
         }
         else {
-          $('.accordion-button').each(function () {
-            if ($(this).attr('aria-expanded') === "false") {
-              $(this).find('.featherIcon').removeClass('rotation');
-            }
-          });
+          $(this).find('.featherIcon').removeClass('rotation');
         }
       });
     });
@@ -55,6 +52,7 @@ export class DashboardComponent implements OnInit {
         connectId.html(feather.icons['menu'].toSvg() + 'Menu');
       }
     });
+    
   }
 
 

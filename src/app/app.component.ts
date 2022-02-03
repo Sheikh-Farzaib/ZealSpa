@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as Feather from 'feather-icons';
 declare var bootstrap: any;
+declare var mdb: any;
 import * as $ from 'jquery';
 
 
@@ -22,6 +23,10 @@ export class AppComponent{
             trigger : 'hover',
             delay: {show: 100, hide: 1}
         });
+    });
+
+    document.querySelectorAll('.form-outline').forEach((formOutline) => {
+      new mdb.Input(formOutline).init();
     });
    
   }
