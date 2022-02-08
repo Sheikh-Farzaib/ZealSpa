@@ -14,11 +14,24 @@
     border-radius: 30px;
     display: flex;
     justify-content: center;
+    
 }
 
+.img{
+    width: 40rem;
+    height: 30rem;
+    margin: 0 0 0 60px;
+    
+}
+.nav-brand{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;  
+}
 
 .form-outline .form-control:focus~.form-label {
     color: var(--text-choc)!important;
+    font-size: 1rem;
    
 }
 .form-outline{
@@ -30,6 +43,21 @@
     color: var(--text-white);
     font-size: 1rem;
     border-radius: 20px;
-    width: 20%;
-    margin: auto;
+    width: 40%;
+    
+    
+}
+.signUpImg{
+    width: 200px;
+    height: 200px;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    #logoCol{
+        display: none;
+    }
+    #formCol{
+        width: 100%;
+    }
 }
