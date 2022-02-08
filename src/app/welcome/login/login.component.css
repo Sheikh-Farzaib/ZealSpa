@@ -33,3 +33,18 @@
     width: 20%;
     margin: auto;
 }
+/* .form-control input [type="email"]{
+    border: none!important;
+    outline: none!important;
+} */
+.form-notch-leading,.form-notch-middle,.trailing{
+    border: 1px solid orange!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+.form-outline .form-control~.form-notch div {
+    pointer-events: none;
+    border: 1px solid #3dd118!important;
+    box-sizing: border-box;
+    background: transparent;
+}
