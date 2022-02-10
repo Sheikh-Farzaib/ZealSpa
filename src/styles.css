@@ -4,22 +4,51 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-    --nav-color:  white;
-    --dash-bg: chocolate;
+    --nav-color: #6f6f70fb;
+    --dash-bg: black;
     --card-bg: snow;
     --text-color: black;
-    --hover-color: #6f6f70fb;
+    --hover-color: white;
     --card-color: #ffffff;
     --no-color: transparent;
     --bg-choc: chocolate;
+    --text-choc: chocolate;
     --text-white: white;
     --text-black: black;
-    --text-gray: #6f6f70fb;
-    --text-choc: chocolate;
-    
+    --text-hover-white: white;
+    --text-hover-black: black;
+    --text-hover-gray: #6f6f70fb;
+    --text-size1: 1.5rem;
+    --text-size2: 1.2rem;
+    --text-size3: 1rem;
+    --text-size4: .8rem;
+    --text-size5: .5rem;
 }
 body{
     background-color: snow!important;
+}
+.textSize1{
+  font-size: var(--text-size1)!important;
+}
+.textSize2{
+  font-size: var(--text-size2)!important;
+}
+.textSize3{
+  font-size: var(--text-size3)!important;
+}
+.textSize4{
+  font-size: var(--text-size4)!important;
+}
+.textSize5{
+  font-size: var(--text-size5)!important;
+}
+.fIcon{
+  width: 20px;
+  height: 20px;
+  color: var(--text-hover-gray)!important;
+}
+.fcolor{
+  color: var(--text-choc)!important;
 }
 /* width */
 ::-webkit-scrollbar {
