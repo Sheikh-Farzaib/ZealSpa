@@ -12,14 +12,16 @@
     height: 93vh;
     border: none;
     border-radius: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     
     
     
 }
 
 .img{
-    width: 40rem;
-    height: 30rem;
+    width: 35rem;
+    height: 25rem;
     margin: 0 0 0 60px;
     
 }
@@ -88,13 +90,15 @@
 #Eyes{
     position: absolute;
     left: 91%;
-    
     top: 0;
     color: var(--text-hover-gray);
     background-color: white;
     cursor: pointer;
 }
 #Eye{
+    display: none;
+}
+.eyeOn{
     display: none;
 }
 

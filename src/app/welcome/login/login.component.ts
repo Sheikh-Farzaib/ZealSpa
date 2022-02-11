@@ -10,28 +10,21 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-
+   
    
     
   }
   valueChanged()
   {
-      if($('#Eye').is(":checked")){
-        $(".eyeOff").hide();
-          $(".eyeOn").show();
-          
-        }
-        else{
-          $(".eyeOff").show();
-          $(".eyeOn").hide();
- 
-        }
         var input = $("#prefixInside1");
   if (input.attr("type") === "password") {
     input.attr("type", "text");
+    $(".eyeOff").hide();
+    $(".eyeOn").show();
   } else {
     input.attr("type", "password");
+    $(".eyeOff").show();
+    $(".eyeOn").hide();
   }
       
   }
